@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width:500px;
+            /* height:500px; */
+            margin: auto;
+        }
+        .row{
+            /* width:500px; */
+            /* height:500px; */
+            background-color: lightgray;
+            border:1px solid black;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        #box{
+            width: 165px; 
+             height:165px;
+            border:1px solid black;
+            padding:5px;
+        }
+        @media (max-width:500px) {
+                .container{
+                width:300px;
+                /* height:500px; */
+                margin: auto;
+            }
+            .row{
+                /* width:500px; */
+                /* height:500px; */
+                background-color: lightgray;
+                border:1px solid black;
+                display: flex;
+                flex-wrap: nowrap;
+            }
+            #box{
+                width: 100px; 
+                height:100px;
+                border:1px solid black;
+                padding:5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <marquee><h1>Tic Tac Toe Game</h1></marquee>
+        <div class="container">
+            <div class="row">
+                <div id="box">1</div>
+                <div id="box">2</div>
+                <div id="box">3</div>
+            </div>
+            <div class="row">
+                <div id="box">1</div>
+                <div id="box">2</div>
+                <div id="box">3</div>
+            </div>
+            <div class="row">
+                <div id="box">1</div>
+                <div id="box">2</div>
+                <div id="box">3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
