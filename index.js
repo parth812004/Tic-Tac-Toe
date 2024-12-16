@@ -15,12 +15,14 @@ document.querySelector('#grid').addEventListener('click',(e)=>{
 			if(flag)
 			{
 				e.target.innerHTML = "X";
+				e.target.style.color = "red";
 				state[boxId] = "X";
 				turn.innerHTML = "Turn for: O";
 			}
 			else
 			{
 				e.target.innerHTML = "O";
+				e.target.style.color = "blue";
 				state[boxId] = "O";
 				turn.innerHTML = "Turn for: X";
 			}
