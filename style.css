@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 10px 0px;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+nav p{
+    font-size: 45px;
+    padding:0px 20px;
+}
+#winCount{
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#main{
+    margin-top:10px;
+}
+#winnerDiv{
+    margin:auto;
+    font-size: 60px;
+    text-align: center;
+    visibility: hidden;
+}
+#grid{
+    width:400px;
+    height:400px;
+    /* border:1px solid black; */
+    margin:auto;
+}
+#row{
+    display: flex;
+    /* border-bottom:1px solid black; */
+    background-color:black;
+}
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 134px;
+    height: 134px;
+    background-color:white;
+    border:2px solid black;
+    font-size: 60px;
+}
+.bt-0{
+    border-top:none;
+}
+.bl-0{
+    border-left:none;
+}
+.bb-0{
+    border-bottom:none;
+}
+.br-0{
+    border-right:none;
+}
+.extras {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+button#reset {
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+button#restart {
+    background-color: blue;
+    color:white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+div#turn {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+}

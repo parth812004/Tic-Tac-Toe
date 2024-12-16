@@ -4,74 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe Game</title>
-    <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        .container{
-            width:500px;
-            /* height:500px; */
-            margin: auto;
-        }
-        .row{
-            /* width:500px; */
-            /* height:500px; */
-            background-color: lightgray;
-            border:1px solid black;
-            display: flex;
-            flex-wrap: nowrap;
-        }
-        #box{
-            width: 165px; 
-             height:165px;
-            border:1px solid black;
-            padding:5px;
-        }
-        @media (max-width:500px) {
-                .container{
-                width:300px;
-                /* height:500px; */
-                margin: auto;
-            }
-            .row{
-                /* width:500px; */
-                /* height:500px; */
-                background-color: lightgray;
-                border:1px solid black;
-                display: flex;
-                flex-wrap: nowrap;
-            }
-            #box{
-                width: 100px; 
-                height:100px;
-                border:1px solid black;
-                padding:5px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
-        <marquee><h1>Tic Tac Toe Game</h1></marquee>
-        <div class="container">
-            <div class="row">
-                <div id="box">1</div>
-                <div id="box">2</div>
-                <div id="box">3</div>
+    <nav>
+        <p>Tic Tac Toe</p>
+    </nav>
+    <div id="winCount">
+        <div>X = <span id="xWin">0</span></div>
+        <div>O = <span id="oWin">0</span></div>
+    </div>
+    <div id="main">
+        <div id="winnerDiv">
+            I'm the winner!
+        </div>
+        <div id="grid">
+            <div id="row">
+                <div id="0" class="col bt-0 bl-0"></div>
+                <div id="1" class="col bt-0"></div>
+                <div id="2" class="col bt-0 br-0"></div>
             </div>
-            <div class="row">
-                <div id="box">1</div>
-                <div id="box">2</div>
-                <div id="box">3</div>
+            <div id="row">
+                <div id="3" class="col bl-0"></div>
+                <div id="4" class="col"></div>
+                <div id="5" class="col br-0"></div>
             </div>
-            <div class="row">
-                <div id="box">1</div>
-                <div id="box">2</div>
-                <div id="box">3</div>
+            <div id="row">
+                <div id="6" class=" col bb-0 bl-0"></div>
+                <div id="7" class="col bb-0"></div>
+                <div id="8" class="col bb-0 br-0"></div>
+            </div>
+            <div id="turn">Click on any box to start the game</div>
+            <div class="extras">
+                <button onclick="restart()" id="restart">Restart Game</button>
+                <button onclick="reset()" id="reset">Reset Game</button>
             </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
