@@ -90,3 +90,94 @@ div#turn {
     margin-top: 25px;
     font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+        display: flex;
+        background-color: black;
+        color: white;
+        padding: 5px 0px;
+        align-items: center;
+    }
+    nav p{
+        font-size: 30px;
+        padding:0px 20px;
+    }
+    #winCount{
+        padding-top: 30px;
+        font-weight: 700;
+        font-size: 30px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #main{
+        margin-top:10px;
+    }
+    #winnerDiv{
+        margin:auto;
+        font-size: 50px;
+        text-align: center;
+        visibility: hidden;
+    }
+    #grid {
+        width: 345px;
+        height: 345px;
+        margin: auto;
+    }
+    #row{
+        display: flex;
+        background-color:black;
+    }
+    .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 134px;
+        height: 115px;
+        background-color: white;
+        border: 2px solid black;
+        font-size: 60px;
+    }
+    .bt-0{
+        border-top:none;
+    }
+    .bl-0{
+        border-left:none;
+    }
+    .bb-0{
+        border-bottom:none;
+    }
+    .br-0{
+        border-right:none;
+    }
+    .extras {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    button#reset {
+        background-color: red;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    button#restart {
+        background-color: blue;
+        color:white;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    div#turn {
+        text-align: center;
+        margin-top: 25px;
+        font-size: 20px;
+    }
+}
